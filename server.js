@@ -43,7 +43,7 @@ app.post('/api/chat', async (req, res) => {
                 'X-Title': process.env.SITE_NAME
             },
             body: JSON.stringify({
-                model: 'anthropic/claude-3-opus-20240229',
+                model: 'meta-llama/llama-4-maverick:free',
                 messages: [
                     {
                         role: 'system',
