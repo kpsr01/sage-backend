@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: sage-backend
+    env: node
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: OPENROUTER_API_KEY
+        sync: false
+      - key: SITE_URL
+        value: https://sage-backend-001c.onrender.com
+      - key: SITE_NAME
+        value: Sage 

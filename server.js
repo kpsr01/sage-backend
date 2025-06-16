@@ -1,7 +1,7 @@
-const express = require('express');
-const cors = require('cors');
-const dotenv = require('dotenv');
-const fetch = require('node-fetch');
+import express from 'express';
+import cors from 'cors';
+import dotenv from 'dotenv';
+import fetch from 'node-fetch';
 
 dotenv.config();
 
@@ -95,5 +95,5 @@ if (process.env.NODE_ENV !== 'production') {
     });
 }
 
-// For Vercel
-module.exports = app; 
+// For Render
+export default app; 
